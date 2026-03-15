@@ -6,18 +6,24 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-display",
   weight: ["400", "500", "600", "700", "800", "900"],
+  display: "swap",
+  preload: false,
 });
 
 const barlowCondensed = Barlow_Condensed({
   subsets: ["latin"],
   variable: "--font-body",
   weight: ["300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+  preload: false,
 });
 
 const barlow = Barlow({
   subsets: ["latin"],
   variable: "--font-mono",
   weight: ["300", "400", "500", "600"],
+  display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {

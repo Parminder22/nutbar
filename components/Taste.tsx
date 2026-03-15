@@ -110,7 +110,7 @@ export default function Taste() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.6, duration: 0.9 }}
           className="mt-16 sm:mt-20 relative overflow-hidden"
-          style={{ height: "200px", sm: "280px" }}
+
         >
           <div className="relative w-full h-48 sm:h-64 overflow-hidden">
             <Image src="/ingredients-spread.png" alt="Real ingredients" fill className="object-cover object-center" sizes="100vw" />

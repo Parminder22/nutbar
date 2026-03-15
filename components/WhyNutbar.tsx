@@ -63,9 +63,9 @@ export default function WhyNutbar() {
           <Image src="/nut3.jpg" alt="Real NUTBAR bars" fill className="object-cover object-center" sizes="100vw" />
           <div className="absolute inset-0" style={{ background: "linear-gradient(to right, #1A0E08 0%, transparent 20%, transparent 80%, #1A0E08 100%), linear-gradient(to bottom, #1A0E08 0%, transparent 30%, transparent 70%, #1A0E08 100%)" }} />
           <div className="absolute inset-0 flex items-center justify-center">
-            <p className="font-body font-900 text-sm sm:text-lg tracking-[0.3em] sm:tracking-[0.5em] uppercase text-nutty-cream/90 text-center px-4">
-              ✦ Real. Fresh. Crafted. ✦
-            </p>
+      <p className="font-body font-900 text-sm sm:text-lg tracking-[0.3em] sm:tracking-[0.5em] uppercase text-black bg-[#C8833A] text-center px-6 py-2">
+        ✦ REAL. FRESH. CRAFTED. ✦
+      </p>
           </div>
         </motion.div>
 

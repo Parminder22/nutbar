@@ -99,7 +99,7 @@ export default function Footer() {
             © {new Date().getFullYear()} The Nutbar · All Rights Reserved
           </p>
           <p className="font-body text-[10px] sm:text-xs text-nutty-sand/80 tracking-wide">
-           Website crafted with 🩷 by Parminder Singh
+           crafted by Aman Sakhuja
           </p>
         </div>
       </div>

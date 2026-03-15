@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const benefits = [
   { icon: "💪", title: "High Protein", desc: "20g of protein per bar. Fuel muscle recovery with every bite.", stat: "20g", statLabel: "per bar" },
-  { icon: "🌰", title: "Real Nuts", desc: "Handpicked almonds and peanuts. No extracts — the real deal.", stat: "100%", statLabel: "real nuts" },
+  { icon: "🌰", title: "Real Nuts", desc: "Handpicked almonds and cashews. No extracts — the real deal.", stat: "100%", statLabel: "real nuts" },
   { icon: "🚫", title: "No Junk", desc: "10 ingredients or fewer. No preservatives, no fillers, no nonsense.", stat: "≤10", statLabel: "ingredients" },
   { icon: "⚡", title: "Athlete Energy", desc: "Complex carbs from nuts deliver sustained energy — no crash.", stat: "4hr", statLabel: "sustained energy" },
   { icon: "🍫", title: "Guilt-Free", desc: "Dark chocolate richness. Balanced macros for peak performance.", stat: "Zero", statLabel: "guilt" },

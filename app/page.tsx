@@ -5,7 +5,7 @@ import Ingredients from "@/components/Ingredients";
 import ProductShowcase from "@/components/ProductShowcase";
 import Performance from "@/components/Performance";
 import Taste from "@/components/Taste";
-import Testimonials from "@/components/Testimonials";
+//import Testimonials from "@/components/Testimonials";
 import InstagramGallery from "@/components/InstagramGallery";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -22,7 +22,7 @@ export default function Home() {
       <ProductShowcase />
       <Performance />
       <Taste />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <InstagramGallery />
       <Contact />
       <Footer />

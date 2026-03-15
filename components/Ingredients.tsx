@@ -5,9 +5,9 @@ import { useInView } from "react-intersection-observer";
 
 const ingredients = [
   { name: "Almonds", emoji: "🌰", color: "#C8833A", bgColor: "#2C1810", tagline: "The Heart", desc: "Premium California almonds packed with vitamin E, healthy fats, and natural crunch.", benefits: ["Vitamin E", "Healthy Fats", "Magnesium", "Antioxidants"], origin: "California, USA" },
-  { name: "Peanuts", emoji: "🥜", color: "#D4A574", bgColor: "#231508", tagline: "The Power", desc: "High-protein roasted peanuts delivering that bold nutty foundation.", benefits: ["7g Protein/oz", "Niacin", "Folate", "Resveratrol"], origin: "India" },
+{ name: "Cashews", emoji: "💪", color: "#D4A574", bgColor: "#231508", tagline: "The Power", desc: "Creamy, buttery cashews loaded with healthy fats and natural protein for that rich, satisfying bite.", benefits: ["Healthy Fats", "Magnesium", "Zinc", "Heart Health"], origin: "India" },
   { name: "Dark Chocolate", emoji: "🍫", color: "#8B5E3C", bgColor: "#1A0E08", tagline: "The Soul", desc: "70%+ cacao dark chocolate — rich, indulgent, and loaded with antioxidants.", benefits: ["Antioxidants", "Mood Boost", "Iron", "Theobromine"], origin: "Ghana / Ecuador" },
-  { name: "Whey Protein", emoji: "💪", color: "#E8B86D", bgColor: "#2C1810", tagline: "The Fuel", desc: "Cold-filtered whey protein isolate. Maximum amino acids, minimal processing.", benefits: ["BCAA Rich", "Fast Absorbing", "20g Per Bar", "Complete Protein"], origin: "New Zealand" },
+  { name: "Honey", emoji: "🍯", color: "#E8B86D", bgColor: "#2C1810", tagline: "The Sweetness", desc: "Pure natural honey binding it all together — no refined sugar, just clean golden sweetness.", benefits: ["Natural Sugar", "Antioxidants", "Antibacterial", "Energy Boost"], origin: "Local Farms, India" },
   { name: "Seeds Mix", emoji: "🌱", color: "#A67C5B", bgColor: "#1C1008", tagline: "The Secret", desc: "Chia, flax, and sunflower seeds adding omega-3s and crunch to every bite.", benefits: ["Omega-3s", "Fiber", "Zinc", "Selenium"], origin: "Organic Farms" },
 ];
 

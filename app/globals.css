@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --choco-dark: #0D0806;
+  --choco-mid: #1A0E08;
+  --choco-rich: #2C1810;
+  --caramel: #C8833A;
+  --caramel-gold: #E8B86D;
+  --nutty-beige: #F5E6D3;
+  --nutty-cream: #FAF3E8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--choco-dark);
+  color: var(--nutty-cream);
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--choco-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--caramel);
+  border-radius: 3px;
+}
+
+/* Selection */
+::selection {
+  background: var(--caramel);
+  color: var(--choco-dark);
+}
+
+/* Text grain overlay for premium feel */
+.grain-overlay::after {
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.035;
+  z-index: 9999;
+}
+
+/* Font classes */
+.font-display { font-family: var(--font-display), serif; }
+.font-body { font-family: var(--font-body), sans-serif; }
+.font-regular { font-family: var(--font-mono), sans-serif; }
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #C8833A, #E8B86D, #C8833A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-cream {
+  background: linear-gradient(135deg, #FAF3E8, #D4A574, #FAF3E8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow effect */
+.glow-caramel {
+  box-shadow: 0 0 40px rgba(200, 131, 58, 0.4), 0 0 80px rgba(200, 131, 58, 0.2);
+}
+
+.text-glow {
+  text-shadow: 0 0 30px rgba(200, 131, 58, 0.6);
+}
+
+/* Marquee */
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+}
+
+/* Noise texture overlay */
+.noise-bg {
+  position: relative;
+}
+.noise-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.06;
+}
+
+/* Premium button */
+.btn-primary {
+  @apply relative inline-flex items-center gap-3 px-8 py-4 bg-caramel text-choco-dark font-body font-800 text-lg tracking-widest uppercase overflow-hidden transition-all duration-300;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #E8B86D, #C8833A);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.btn-primary:hover::before {
+  opacity: 1;
+}
+
+.btn-primary span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section divider */
+.divider-gold {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #C8833A, transparent);
+}
+
+/* Card hover */
+.card-hover {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+}
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(200, 131, 58, 0.2);
+}
+
+/* Ingredient card flip */
+.ingredient-card {
+  perspective: 1000px;
+}
+.ingredient-inner {
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+.ingredient-card:hover .ingredient-inner {
+  transform: rotateY(180deg);
+}
+.ingredient-front,
+.ingredient-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.ingredient-back {
+  transform: rotateY(180deg);
+}
+
+@layer utilities {
+  .font-800 { font-weight: 800; }
+  .font-900 { font-weight: 900; }
+  .tracking-tightest { letter-spacing: -0.05em; }
+}

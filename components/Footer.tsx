@@ -58,18 +58,18 @@ export default function Footer() {
             <p className="font-body font-800 text-xs tracking-[0.3em] uppercase text-caramel mb-4 sm:mb-5">Contact</p>
             <div className="space-y-3 sm:space-y-4">
               <div>
-                <p className="font-body text-[10px] tracking-widest uppercase text-nutty-sand/30 mb-0.5">Founder</p>
+                <p className="font-body text-[10px] tracking-widest uppercase text-nutty-sand mb-0.5">Founder</p>
                 <p className="font-body font-600 text-nutty-cream text-xs sm:text-sm">Aman Sakhuja</p>
               </div>
               <div>
-                <p className="font-body text-[10px] tracking-widest uppercase text-nutty-sand/30 mb-0.5">Phone</p>
+                <p className="font-body text-[10px] tracking-widest uppercase text-nutty-sand mb-0.5">Phone</p>
                 <a href="tel:9873904155"
                   className="font-body font-600 text-nutty-cream text-xs sm:text-sm hover:text-caramel-gold transition-colors duration-300">
                   +91 9873904155
                 </a>
               </div>
               <div>
-                <p className="font-body text-[10px] tracking-widest uppercase text-nutty-sand/30 mb-0.5">Email</p>
+                <p className="font-body text-[10px] tracking-widest uppercase text-nutty-sand mb-0.5">Email</p>
                 <a href="mailto:amansakhuja2011@gmail.com"
                   className="font-body font-600 text-nutty-cream text-xs hover:text-caramel-gold transition-colors duration-300 break-all">
                   amansakhuja2011@gmail.com
@@ -98,8 +98,8 @@ export default function Footer() {
           <p className="font-body text-[10px] sm:text-xs text-nutty-sand/30 tracking-widest uppercase text-center sm:text-left">
             © {new Date().getFullYear()} The Nutbar · All Rights Reserved
           </p>
-          <p className="font-body text-[10px] sm:text-xs text-nutty-sand/20 tracking-wide">
-            Crafted with 🥜 by Aman Sakhuja
+          <p className="font-body text-[10px] sm:text-xs text-nutty-sand/80 tracking-wide">
+           Website crafted with 🩷 by Parminder Singh
           </p>
         </div>
       </div>

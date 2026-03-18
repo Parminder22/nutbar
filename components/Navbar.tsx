@@ -67,7 +67,7 @@ export default function Navbar() {
           {/* CTA */}
           <div className="hidden md:block">
             <Link
-              href="/#contact"
+              href="https://nut-bar-2.myshopify.com"
               className="font-body font-800 text-xs tracking-[0.2em] uppercase px-6 py-3 border border-caramel text-caramel hover:bg-caramel hover:text-choco-dark transition-all duration-300"
             >
               Order Now

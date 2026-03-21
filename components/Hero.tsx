@@ -135,6 +135,7 @@ export default function Hero() {
           >
             <Link
               href="https://nut-bar-2.myshopify.com/"
+
               className="group relative inline-flex items-center gap-3 px-8 py-4 bg-caramel text-choco-dark font-body font-900 text-sm tracking-[0.2em] uppercase overflow-hidden transition-all duration-300 hover:scale-105 animate-pulse-glow"
             >
               <span className="relative z-10">⚡ Fuel Up</span>

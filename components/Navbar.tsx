@@ -129,7 +129,7 @@ export default function Navbar() {
                 transition={{ delay: 0.4 }}
               >
                 <Link
-                  href="/#contact"
+                  href="https://nut-bar-2.myshopify.com"
                   onClick={() => setMenuOpen(false)}
                   className="font-body font-800 text-sm tracking-widest uppercase px-8 py-4 bg-caramel text-choco-dark mt-4 inline-block"
                 >
